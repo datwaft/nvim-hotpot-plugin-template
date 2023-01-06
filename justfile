@@ -10,7 +10,11 @@
 
 # Build lua/ for distribution
 @build: ensure-deps
-  nvim --headless +"Fnlfile make.fnl" +"qa"
+  nvim --clean --headless \
+    +"set rtp+=./deps/hotpot.nvim" \
+    +"source ./deps/hotpot.nvim/plugin/hotpot.vim" \
+    +"Fnlfile make.fnl" \
+    +"qa"
 
 # Clean lua/
 @clean:
