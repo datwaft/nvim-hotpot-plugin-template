@@ -6,7 +6,7 @@
 
 # Build lua/ for distribution
 @build:
-  nvim --headless +"Fnlfile build.fnl" +"qa"
+  nvim --headless +"Fnlfile make.fnl" +"qa"
 
 # Clean lua/
 @clean:
