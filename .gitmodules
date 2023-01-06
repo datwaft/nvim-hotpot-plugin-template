@@ -1,0 +1,3 @@
+[submodule "deps/hotpot.nvim"]
+	path = deps/hotpot.nvim
+	url = https://github.com/rktjmp/hotpot.nvim.git

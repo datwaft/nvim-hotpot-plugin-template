@@ -4,8 +4,12 @@
 @help:
   just --list
 
+# Ensure dependencies are installed
+@ensure-deps:
+  git submodule update --init
+
 # Build lua/ for distribution
-@build:
+@build: ensure-deps
   nvim --headless +"Fnlfile make.fnl" +"qa"
 
 # Clean lua/
