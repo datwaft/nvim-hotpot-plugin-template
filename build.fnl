@@ -1,0 +1,6 @@
+  (let [{: build} (require :hotpot.api.make)
+        (ok? err) (build "./fnl" {:force? true
+                                  :atomic? true}
+                         "./fnl/(.+)" (fn [path {: join-path}]
+                                        (join-path "./lua" path)))]
+    (values nil))
