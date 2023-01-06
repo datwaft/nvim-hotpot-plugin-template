@@ -1,3 +1,6 @@
 [submodule "deps/hotpot.nvim"]
 	path = deps/hotpot.nvim
 	url = https://github.com/rktjmp/hotpot.nvim.git
+[submodule "deps/fennel-test"]
+	path = deps/fennel-test
+	url = https://github.com/andreyorst/fennel-test
